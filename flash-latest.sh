@@ -1,0 +1,1 @@
+wally-cli builds/ergodox_ez_henrikrudstrom.hex
