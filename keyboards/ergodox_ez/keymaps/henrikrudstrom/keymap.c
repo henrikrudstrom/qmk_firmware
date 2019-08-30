@@ -20,7 +20,7 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_Q,             KC_W,             KC_F,             LT(4,KC_P),       KC_B,             KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_Q,             KC_W,             LT(4, KC_F),             LT(4,KC_P),       KC_B,             KC_TRANSPARENT,
     KC_BSPACE,        LSFT_T(KC_A),     LGUI_T(KC_R),     LALT_T(KC_S),     LCTL_T(KC_T),     KC_G,
     LT(5,KC_DELETE),  KC_Z,             KC_X,             KC_C,             LT(2,KC_D),       KC_V,             KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   LT(6, KC_ESCAPE), LT(1,KC_SPACE),
@@ -78,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [3] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_F1,            KC_F2,            KC_F3,            KC_F4,            KC_F5,            KC_TRANSPARENT,
-    KC_TRANSPARENT,   LSFT_T(KC_F6),    LCTL_T(KC_F7),    LALT_T(KC_F8),    LGUI_T(KC_F9),    KC_F10,
+    KC_TRANSPARENT,   LSFT_T(KC_F6),    LGUI_T(KC_F7),    LALT_T(KC_F8),    LCTL_T(KC_F9),    KC_F10,
     KC_TRANSPARENT,   KC_F11,           KC_F12,           KC_F13,           KC_F14,           KC_F15,           KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,
@@ -87,7 +87,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
-                      KC_TRANSPARENT,   RGUI_T(KC_NO),    KC_RALT,          KC_RCTRL,         KC_RSHIFT,        KC_TRANSPARENT,
+                      KC_TRANSPARENT,   KC_RCTRL,         KC_RALT,          KC_RGUI,         KC_RSHIFT,        KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                         KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                               KC_TRANSPARENT,   KC_TRANSPARENT,
@@ -97,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [4] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_NO,            KC_NO,            KC_NO,            KC_TRANSPARENT,   KC_NO,            KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_LSHIFT,        KC_LCTRL,         KC_LALT,          LGUI_T(KC_NO),    KC_TRANSPARENT, 
+    KC_TRANSPARENT,   KC_LSHIFT,        KC_LGUI,         KC_LALT,          LCTL_T(KC_NO),    KC_TRANSPARENT, 
     KC_TRANSPARENT,   LGUI(KC_Z),       LGUI(KC_X),       LGUI(KC_C),       LGUI(KC_V),       LGUI(KC_V),       KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,
