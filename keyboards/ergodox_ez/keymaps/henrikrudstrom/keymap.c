@@ -114,12 +114,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                             KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT),
 
 
-  //Navigation
+  //Windows
   [5] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_NO,            KC_NO,            HYPR(KC_UP),      KC_NO,            KC_NO,            KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_NO,            HYPR(KC_LEFT),    HYPR(KC_DOWN),    HYPR(KC_RIGHT),            KC_NO, 
-    KC_TRANSPARENT,   KC_NO,            KC_NO,            KC_NO,            KC_NO,            KC_NO,            KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_NO,            KC_HYPR,            KC_1,       KC_2,            KC_NO,            KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,
@@ -128,7 +128,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_NO,            KC_NO,            HYPR(KC_UP),      KC_NO,            KC_NO,            KC_TRANSPARENT,
                       KC_NO,            HYPR(KC_LEFT),    HYPR(KC_DOWN),    HYPR(KC_RIGHT),   KC_NO,            KC_NO,
-    KC_TRANSPARENT,   KC_NO,            KC_NO,            KC_NO,            KC_NO,            KC_NO,            KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_NO,            KC_NO,            HYPR(KC_1),       HYPR(KC_2),            KC_NO,            KC_TRANSPARENT,
                                         KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                               KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                                                 KC_TRANSPARENT,
