@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_J,             KC_L,             KC_U,             KC_Y,             KC_SCOLON,        LGUI(KC_W),
-                      KC_K,             RCTL_T(KC_N),     RALT_T(KC_E),     RGUI_T(KC_I),     RSFT_T(KC_O),     KC_ESCAPE,
+                      KC_K,             RCTL_T(KC_N),     RALT_T(KC_E),     RGUI_T(KC_I),     RSFT_T(KC_O),     KC_BSPACE,
     KC_TRANSPARENT,   KC_M,             LT(3,KC_H),       KC_COMMA,         KC_DOT,           NO_MINS,          MO(5),
                                         LT(1,KC_SPACE),   LT(6, KC_BSPACE), KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                               KC_PAUSE,         KC_PSCREEN,
