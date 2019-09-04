@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [4] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_NO,            KC_NO,            KC_NO,            KC_TRANSPARENT,   KC_NO,            KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_LSHIFT,        KC_LGUI,         KC_LALT,          LCTL_T(KC_NO),    KC_TRANSPARENT, 
+    KC_TRANSPARENT,   KC_LSHIFT,        KC_LGUI,         KC_LALT,           LCTL_T(KC_NO),    KC_TRANSPARENT, 
     KC_TRANSPARENT,   LGUI(KC_Z),       LGUI(KC_X),       LGUI(KC_C),       LGUI(KC_V),       LGUI(KC_V),       KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,
@@ -119,8 +119,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [5] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_NO,            KC_NO,            HYPR(KC_UP),      KC_NO,            KC_NO,            KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_NO,            HYPR(KC_LEFT),    HYPR(KC_DOWN),    HYPR(KC_RIGHT),            KC_NO, 
-    KC_TRANSPARENT,   KC_NO,            KC_HYPR,            KC_1,       KC_2,            KC_NO,            KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_NO,            HYPR(KC_LEFT),    HYPR(KC_DOWN),    HYPR(KC_RIGHT),   KC_NO, 
+    KC_TRANSPARENT,   KC_NO,            KC_HYPR,          KC_1,             KC_2,             KC_NO,            KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,
@@ -129,11 +129,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_NO,            KC_NO,            HYPR(KC_UP),      KC_NO,            KC_NO,            KC_TRANSPARENT,
                       KC_NO,            HYPR(KC_LEFT),    HYPR(KC_DOWN),    HYPR(KC_RIGHT),   KC_NO,            KC_NO,
-    KC_TRANSPARENT,   KC_NO,            KC_NO,            HYPR(KC_1),       HYPR(KC_2),            KC_NO,            KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_NO,            KC_NO,            HYPR(KC_1),       HYPR(KC_2),       KC_NO,            KC_TRANSPARENT,
                                         KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                               KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                                                 KC_TRANSPARENT,
-                                                                            KC_TRANSPARENT,   KC_TRANSPARENT,  KC_TRANSPARENT),
+                                                                            KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT),
 
                                                                             //Numpad
   [6] = LAYOUT_ergodox(
@@ -148,7 +148,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                             
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
-                      KC_TRANSPARENT,   KC_TRANSPARENT,   RALT_T(NO_AE),    KC_TRANSPARENT,   RALT_T(NO_OSLH),   KC_TRANSPARENT,
+                      KC_TRANSPARENT,   KC_TRANSPARENT,   RALT_T(NO_AE),    KC_TRANSPARENT,   RALT_T(NO_OSLH),  KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                         KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                               KC_TRANSPARENT,   KC_TRANSPARENT,
@@ -166,7 +166,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                             
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
-                      KC_TRANSPARENT,   KC_TRANSPARENT,   RALT_T(NO_AE),    KC_TRANSPARENT,   RALT_T(NO_OSLH),   KC_TRANSPARENT,
+                      KC_TRANSPARENT,   KC_TRANSPARENT,   RALT_T(NO_AE),    KC_TRANSPARENT,   RALT_T(NO_OSLH),  KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                         KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                               KC_TRANSPARENT,   KC_TRANSPARENT,
