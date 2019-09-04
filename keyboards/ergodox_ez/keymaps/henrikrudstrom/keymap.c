@@ -21,19 +21,19 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
-    LGUI(KC_W),       KC_Q,             KC_W,             LT(4, KC_F),      LT(4,KC_P),       KC_B,             KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_Q,             KC_W,             LT(4, KC_F),      LT(4,KC_P),       KC_B,             KC_TRANSPARENT,
     KC_ESCAPE,        LSFT_T(KC_A),     LGUI_T(KC_R),     LALT_T(KC_S),     LCTL_T(KC_T),     KC_G,
     LT(5,KC_DELETE),  KC_Z,             KC_X,             KC_C,             LT(2,KC_D),       KC_V,             KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   LT(6, KC_BSPACE), LT(1,KC_SPACE),
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   LT(6, LGUI(KC_W)),LT(1,KC_SPACE),
     KC_INSERT,        KC_SCROLLLOCK,
     KC_CAPSLOCK,
     KC_TAB,           KC_ENTER,         KC_TRANSPARENT,
     
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_J,             KC_L,             KC_U,             KC_Y,             KC_SCOLON,        LGUI(KC_W),
+    KC_TRANSPARENT,   KC_J,             KC_L,             KC_U,             KC_Y,             KC_SCOLON,        KC_TRANSPARENT,
                       KC_K,             RCTL_T(KC_N),     RALT_T(KC_E),     RGUI_T(KC_I),     RSFT_T(KC_O),     KC_BSPACE,
     KC_TRANSPARENT,   KC_M,             LT(3,KC_H),       KC_COMMA,         KC_DOT,           NO_MINS,          MO(5),
-                                        LT(1,KC_SPACE),   LT(6, KC_BSPACE), KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+                                        LT(1,KC_SPACE),   LT(6, LGUI(KC_W)),KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                               KC_PAUSE,         KC_PSCREEN,
                                                                                                                 KC_NUMLOCK,
                                                                             KC_TRANSPARENT,   KC_TRANSPARENT,   KC_KP_ENTER),
@@ -137,6 +137,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                                                                             //Numpad
   [6] = LAYOUT_ergodox(
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+    KC_TRANSPARENT,   LSFT_T(NO_AA),    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+                                        KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+                                                                                              KC_TRANSPARENT,   KC_TRANSPARENT,
+                                                                                                                KC_TRANSPARENT,
+                                                                            KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+                                                                            
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+                      KC_TRANSPARENT,   KC_TRANSPARENT,   RALT_T(NO_AE),    KC_TRANSPARENT,   RALT_T(NO_OSLH),   KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+                                        KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+                                                                                              KC_TRANSPARENT,   KC_TRANSPARENT,
+                                                                                                                KC_TRANSPARENT,
+                                                                            KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT),
+  [7] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   LSFT_T(NO_AA),    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
