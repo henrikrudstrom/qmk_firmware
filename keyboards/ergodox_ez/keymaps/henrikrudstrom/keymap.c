@@ -23,21 +23,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_Q,             KC_W,             LT(5, KC_F),      LT(5,KC_P),       KC_B,             TO(1),
     LT(2,KC_ESCAPE),  LSFT_T(KC_A),     LGUI_T(KC_R),     LALT_T(KC_S),     LCTL_T(KC_T),     KC_G,
-    LT(6,KC_DELETE),  KC_Z,             KC_X,             KC_C,             LT(3,KC_D),       KC_V,             KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   MO(7),            LT(2,KC_SPACE),
+    LT(8,KC_DELETE),  KC_Z,             KC_X,             KC_C,             LT(3,KC_D),       KC_V,             KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   MO(6),            LSFT_T(KC_SPACE),
     KC_INSERT,        KC_SCROLLLOCK,
     KC_CAPSLOCK,
-    KC_TAB,           KC_ENTER,         KC_TRANSPARENT,
+    HYPR_T(KC_TAB),   KC_ENTER,         KC_TRANSPARENT,
 
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
-    TO(1),            KC_J,             LT(8, KC_L),      KC_U,             KC_Y,             KC_SCOLON,        KC_TRANSPARENT,
+    TO(1),            KC_J,             LT(7, KC_L),      KC_U,             KC_Y,             KC_SCOLON,        KC_TRANSPARENT,
                       KC_K,             RCTL_T(KC_N),     RALT_T(KC_E),     RGUI_T(KC_I),     RSFT_T(KC_O),     LT(2, KC_BSPACE),
-    KC_TRANSPARENT,   KC_M,             LT(4,KC_H),       KC_COMMA,         KC_DOT,           NO_MINS,          LT(6, KC_BSPACE),
-                                        LT(2,KC_SPACE),   MO(7),            KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_M,             LT(4,KC_H),       KC_COMMA,         KC_DOT,           NO_MINS,          LT(8, KC_BSPACE),
+                                        LSFT_T(KC_SPACE), MO(6),            KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                               KC_PAUSE,         KC_PSCREEN,
                                                                                                                 KC_NUMLOCK,
-                                                                            KC_TRANSPARENT,   KC_TRANSPARENT,   KC_KP_ENTER),
-
+                                                                            KC_TRANSPARENT,   KC_TRANSPARENT,   HYPR_T(KC_KP_ENTER)),
   //VSCODE
   [1] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
@@ -113,7 +112,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                               KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                                                 KC_TRANSPARENT,
-                                                                            KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT),
+                                                                           KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT),
   //Navigation
   [5] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
@@ -134,28 +133,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                                                                 KC_TRANSPARENT,
                                                                             KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT),
 
-  //Windows
-  [6] = LAYOUT_ergodox(
-    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_NO,            KC_NO,            HYPR(KC_UP),      KC_NO,            KC_NO,            KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_NO,            HYPR(KC_LEFT),    HYPR(KC_DOWN),    HYPR(KC_RIGHT),   KC_NO,
-    KC_TRANSPARENT,   KC_NO,            HYPR(KC_1),       HYPR(KC_2),       KC_NO,            KC_NO,            KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_TRANSPARENT,
-    KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_TRANSPARENT,  KC_TRANSPARENT,
-
-    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_NO,            KC_NO,            HYPR(KC_UP),      KC_NO,            KC_NO,            KC_TRANSPARENT,
-                      KC_NO,            HYPR(KC_LEFT),    HYPR(KC_DOWN),    HYPR(KC_RIGHT),   KC_NO,            KC_NO,
-    KC_TRANSPARENT,   KC_NO,            KC_NO,            HYPR(KC_1),       HYPR(KC_2),       KC_NO,            KC_TRANSPARENT,
-                                        KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
-                                                                                              KC_TRANSPARENT,   KC_TRANSPARENT,
-                                                                                                                KC_TRANSPARENT,
-                                                                            KC_TRANSPARENT,   KC_TRANSPARENT,  KC_TRANSPARENT),
 
   //scandinavian characters
-  [7] = LAYOUT_ergodox(
+  [6] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   LSFT_T(NO_AA),    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
@@ -175,7 +155,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                                                                 KC_TRANSPARENT,
                                                                             KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT),
   //mouse
-  [8] = LAYOUT_ergodox(
+  [7] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_WH_L,          KC_MS_UP,         KC_WH_R,          KC_WH_U,          KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_MS_LEFT,       KC_MS_DOWN,       KC_MS_RIGHT,      KC_WH_D,
@@ -189,6 +169,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                       KC_TRANSPARENT,   KC_TRANSPARENT,   KC_MS_ACCEL0,     KC_MS_ACCEL1,     KC_MS_ACCEL2,     KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+                                        KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+                                                                                              KC_TRANSPARENT,   KC_TRANSPARENT,
+                                                                                                                KC_TRANSPARENT,
+                                                                            KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT),
+  // hypr layer
+  [8] = LAYOUT_ergodox(
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+    KC_TRANSPARENT,   HYPR(KC_F1),      HYPR(KC_F2),      HYPR(KC_F3),      HYPR(KC_F4),      HYPR(KC_F5),      KC_TRANSPARENT,
+    KC_TRANSPARENT,   HYPR(KC_F11),     HYPR(KC_F12),     HYPR(KC_F13),     HYPR(KC_F14),     HYPR(KC_F15),
+    KC_TRANSPARENT,   HYPR(KC_1),       HYPR(KC_2),       HYPR(KC_3),       HYPR(KC_4),       HYPR(KC_5),       KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_TRANSPARENT,
+    KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+    KC_TRANSPARENT,   HYPR(KC_F6),      HYPR(KC_F7),      HYPR(KC_F8),      HYPR(KC_F9),      HYPR(KC_F10),     KC_TRANSPARENT,
+                      HYPR(KC_F16),     HYPR(KC_F17),     HYPR(KC_F18),     HYPR(KC_F19),     HYPR(KC_F20),     KC_TRANSPARENT,
+    KC_TRANSPARENT,   HYPR(KC_6),       HYPR(KC_7),       HYPR(KC_8),       HYPR(KC_9),       HYPR(KC_0),       KC_TRANSPARENT,
                                         KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                               KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                                                 KC_TRANSPARENT,
@@ -276,18 +275,8 @@ const uint8_t PROGMEM ledmap[][DRIVER_LED_TOTAL][3] = {
             CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
                       CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE },
 
-    [6] = { CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
-            CLR_NONE, CLR_NONE, CLR_YELL, CLR_NONE, CLR_NONE,
-            CLR_NONE, CLR_YELL, CLR_YELL, CLR_YELL, CLR_NONE,
-            CLR_NONE, CLR_NONE, CLR_REDD, CLR_REDD, CLR_NONE,
-                      CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
-            CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
-            CLR_NONE, CLR_NONE, CLR_YELL, CLR_NONE, CLR_NONE,
-            CLR_NONE, CLR_YELL, CLR_YELL, CLR_YELL, CLR_NONE,
-            CLR_NONE, CLR_NONE, CLR_REDD, CLR_REDD, CLR_NONE,
-                      CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE },
 
-    [7] = { CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
+    [6] = { CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
             CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
             CLR_NONE, CLR_NONE, CLR_REDD, CLR_NONE, CLR_REDD,
             CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
@@ -298,7 +287,7 @@ const uint8_t PROGMEM ledmap[][DRIVER_LED_TOTAL][3] = {
             CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
                       CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE },
 
-    [8] = { CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
+    [7] = { CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
             CLR_NONE, CLR_BLUE, CLR_NONE, CLR_NONE, CLR_NONE,
             CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
             CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
@@ -307,6 +296,17 @@ const uint8_t PROGMEM ledmap[][DRIVER_LED_TOTAL][3] = {
             CLR_BLUE, CLR_YELL, CLR_REDD, CLR_YELL, CLR_NONE,
             CLR_BLUE, CLR_REDD, CLR_REDD, CLR_REDD, CLR_NONE,
             CLR_NONE, CLR_BLUE, CLR_NONE, CLR_BLUE, CLR_NONE,
+                      CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE },
+
+    [8] = { CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
+            CLR_NONE, CLR_NONE, CLR_YELL, CLR_NONE, CLR_NONE,
+            CLR_NONE, CLR_YELL, CLR_YELL, CLR_YELL, CLR_NONE,
+            CLR_NONE, CLR_NONE, CLR_REDD, CLR_REDD, CLR_NONE,
+                      CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
+            CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
+            CLR_NONE, CLR_NONE, CLR_YELL, CLR_NONE, CLR_NONE,
+            CLR_NONE, CLR_YELL, CLR_YELL, CLR_YELL, CLR_NONE,
+            CLR_NONE, CLR_NONE, CLR_REDD, CLR_REDD, CLR_NONE,
                       CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE },
 };
 
