@@ -6,7 +6,7 @@
 #define DEBOUNCE 12
 
 #undef TAPPING_TERM
-#define TAPPING_TERM 206
+#define TAPPING_TERM 188
 
 #define PERMISSIVE_HOLD
 
