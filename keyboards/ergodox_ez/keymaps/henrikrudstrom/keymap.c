@@ -22,18 +22,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_Q,             KC_W,             LT(5, KC_F),      LT(5,KC_P),       KC_B,             LGUI(KC_W),
-    LSFT_T(KC_ESCAPE),LSFT_T(KC_A),     LGUI_T(KC_R),     LALT_T(KC_S),     LCTL_T(KC_T),     KC_G,
-    LT(8,KC_DELETE),  KC_Z,             KC_X,             KC_C,             LT(3,KC_D),       KC_V,             LGUI(KC_E),
-    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   LT(6, KC_BSPACE), LT(2, KC_SPACE),
+    KC_ESCAPE,        LSFT_T(KC_A),     LGUI_T(KC_R),     LALT_T(KC_S),     LCTL_T(KC_T),     KC_G,
+    MO(8),            KC_Z,             KC_X,             KC_C,             LT(3,KC_D),       KC_V,             LGUI(KC_E),
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   MO(6),            LT(2, KC_SPACE),
     KC_INSERT,        KC_SCROLLLOCK,
     KC_CAPSLOCK,
-    HYPR_T(KC_TAB),   KC_ENTER,         KC_TRANSPARENT,
+    HYPR_T(KC_TAB),   LSFT_T(KC_ENTER), KC_TRANSPARENT,
 
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     LGUI(KC_W),       KC_J,             LT(7, KC_L),      KC_U,             KC_Y,             KC_SCOLON,        KC_TRANSPARENT,
-                      KC_K,             RCTL_T(KC_N),     RALT_T(KC_E),     RGUI_T(KC_I),     RSFT_T(KC_O),     RSFT_T(KC_BSPACE),
-    LGUI(KC_E),       KC_M,             LT(4,KC_H),       KC_COMMA,         KC_DOT,           NO_SLSH,          LT(8, KC_BSPACE),
-                                        LT(2, KC_SPACE),  LT(6, KC_BSPACE), KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+                      KC_K,             RCTL_T(KC_N),     RALT_T(KC_E),     RGUI_T(KC_I),     RSFT_T(KC_O),     KC_BSPACE,
+    LGUI(KC_E),       KC_M,             LT(4,KC_H),       KC_COMMA,         KC_DOT,           NO_SLSH,          MO(8),
+                                        LT(2, KC_SPACE),  MO(6),            KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                               KC_PAUSE,         KC_PSCREEN,
                                                                                                                 KC_NUMLOCK,
                                                                             KC_TRANSPARENT,   LGUI(KC_SPACE),   HYPR_T(KC_ENTER)),
@@ -173,8 +173,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                                               KC_TRANSPARENT,   KC_TRANSPARENT,
                                                                                                                 KC_TRANSPARENT,
                                                                             KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT),
-  // hypr layer
+  // meh layer
   [8] = LAYOUT_ergodox(
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+    KC_TRANSPARENT,   MEH(KC_F1),       MEH(KC_F2),       MEH(KC_F3),       MEH(KC_F4),      MEH(KC_F5),      KC_TRANSPARENT,
+    KC_TRANSPARENT,   MEH(KC_F11),      MEH(KC_F12),      MEH(KC_F13),      MEH(KC_F14),     MEH(KC_F15),
+    KC_TRANSPARENT,   MEH(KC_1),        MEH(KC_2),        MEH(KC_3),        MEH(KC_4),       MEH(KC_5),       KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   MO(9),
+    KC_TRANSPARENT,   KC_TRANSPARENT,
+    KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+
+    KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+    KC_TRANSPARENT,   MEH(KC_F6),       MEH(KC_F7),       MEH(KC_F8),       MEH(KC_F9),       MEH(KC_F10),     KC_TRANSPARENT,
+                      MEH(KC_F16),      MEH(KC_F17),      MEH(KC_F18),      MEH(KC_F19),      MEH(KC_F20),     KC_TRANSPARENT,
+    KC_TRANSPARENT,   MEH(KC_6),        MEH(KC_7),        MEH(KC_8),        MEH(KC_9),        MEH(KC_0),       KC_TRANSPARENT,
+                                        MO(9),   KC_TRANSPARENT,            KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
+                                                                                              KC_TRANSPARENT,   KC_TRANSPARENT,
+                                                                                                                KC_TRANSPARENT,
+                                                                            KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT),
+
+  // hypr layer
+  [9] = LAYOUT_ergodox(
     KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,   KC_TRANSPARENT,
     KC_TRANSPARENT,   HYPR(KC_F1),      HYPR(KC_F2),      HYPR(KC_F3),      HYPR(KC_F4),      HYPR(KC_F5),      KC_TRANSPARENT,
     KC_TRANSPARENT,   HYPR(KC_F11),     HYPR(KC_F12),     HYPR(KC_F13),     HYPR(KC_F14),     HYPR(KC_F15),
@@ -308,6 +328,16 @@ const uint8_t PROGMEM ledmap[][DRIVER_LED_TOTAL][3] = {
             CLR_NONE, CLR_YELL, CLR_YELL, CLR_YELL, CLR_NONE,
             CLR_NONE, CLR_NONE, CLR_REDD, CLR_REDD, CLR_NONE,
                       CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE },
+    [9] = { CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
+            CLR_NONE, CLR_NONE, CLR_WITE, CLR_NONE, CLR_NONE,
+            CLR_NONE, CLR_WITE, CLR_WITE, CLR_WITE, CLR_NONE,
+            CLR_NONE, CLR_NONE, CLR_YELL, CLR_YELL, CLR_NONE,
+                      CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
+            CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE,
+            CLR_NONE, CLR_NONE, CLR_WITE, CLR_NONE, CLR_NONE,
+            CLR_NONE, CLR_WITE, CLR_WITE, CLR_WITE, CLR_NONE,
+            CLR_NONE, CLR_NONE, CLR_YELL, CLR_YELL, CLR_NONE,
+                      CLR_NONE, CLR_NONE, CLR_NONE, CLR_NONE },
 };
 
 void set_layer_color(int layer) {
@@ -355,6 +385,9 @@ void rgb_matrix_indicators_user(void) {
       break;
     case 8:
       set_layer_color(8);
+      break;
+    case 9:
+      set_layer_color(9);
       break;
   }
 }
