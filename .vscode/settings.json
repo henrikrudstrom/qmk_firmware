@@ -5,20 +5,22 @@
     // Configure glob patterns for excluding files and folders.
     "files.exclude": {
         "**/.build": true,
-        "**/*.hex": true
+        "**/*.hex": true,
+        "**/*.bin": true
     },
     "files.associations": {
         "*.h": "c",
         "*.c": "c",
+        "*.inc": "c",
         "*.cpp": "cpp",
         "*.hpp": "cpp",
-        "xstddef": "c"
+        "xstddef": "c",
+        "type_traits": "c",
+        "utility": "c",
+        "ranges": "c"
     },
-    "workbench.colorCustomizations": {
-        "titleBar.activeBackground": "#4fa92a",
-        "titleBar.inactiveBackground": "#4fa92a99",
-        "titleBar.activeForeground": "#e7e7e7",
-        "titleBar.inactiveForeground": "#e7e7e799"
-    },
-    "peacock.color": "#4fa92a"
+    "[markdown]": {
+        "editor.trimAutoWhitespace": false,
+        "files.trimTrailingWhitespace": false
+    }
 }
