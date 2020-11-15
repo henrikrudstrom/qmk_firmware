@@ -7,9 +7,11 @@
 #define DEBOUNCE 10
 
 #undef TAPPING_TERM
-#define TAPPING_TERM 170
+#define TAPPING_TERM 175
 
 #define PERMISSIVE_HOLD
+
+#define RETRO_TAPPING
 
 #define FIRMWARE_VERSION u8"vKqqa/y97jB"
 #define RGB_MATRIX_STARTUP_SPD 60
